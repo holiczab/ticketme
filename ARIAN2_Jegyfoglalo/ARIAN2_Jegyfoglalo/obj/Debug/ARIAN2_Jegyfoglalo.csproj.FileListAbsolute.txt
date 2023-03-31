@@ -1,0 +1,33 @@
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.exe.config
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.exe
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.pdb
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.AssemblyReference.cache
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.SuggestedBindingRedirects.cache
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.Form1.resources
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.Properties.Resources.resources
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.GenerateResource.cache
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.CoreCompileInputs.cache
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.exe
+C:\Users\128\source\repos\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.pdb
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.exe.config
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.exe
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\ARIAN2_Jegyfoglalo.pdb
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\EntityFramework.dll
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\System.Data.SQLite.dll
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\EntityFramework.xml
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\bin\Debug\System.Data.SQLite.xml
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.AssemblyReference.cache
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.SuggestedBindingRedirects.cache
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.Form1.resources
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.Properties.Resources.resources
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.GenerateResource.cache
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.CoreCompileInputs.cache
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.csproj.CopyComplete
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.exe
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.pdb
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.Admin.resources
+C:\Users\HB\Documents\Pannon Egyetem\5. Félév\C# programozás_new\ARIAN2_Jegyfoglalo\ARIAN2_Jegyfoglalo\obj\Debug\ARIAN2_Jegyfoglalo.User.resources
