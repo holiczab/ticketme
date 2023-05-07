@@ -1,0 +1,31 @@
+{
+    "test_suite": {
+        "name": "TrainTicket",
+        "id": "61986f43-7b84-41b1-988a-177bad7d25e7",
+        "method": "AS",
+        "input_list": [
+            "started",
+            "login_user",
+            "change_lang_eu",
+            "check_user",
+            "ticket_bought",
+            "change_lang_hu",
+            "log_out",
+            "login_admin",
+            "change_lang_ea",
+            "change_lang"
+        ],
+        "output_list": [
+            "login_page",
+            "user_page",
+            "english_user_page",
+            "seat_page",
+            "user_page",
+            "hungarian_user_page",
+            "login_page",
+            "admin_page",
+            "english_admin_page",
+            "hungarian_admin_page"
+        ]
+    }
+}

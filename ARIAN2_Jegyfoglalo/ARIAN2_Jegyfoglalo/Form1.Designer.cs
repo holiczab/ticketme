@@ -119,11 +119,13 @@
             // 
             // username
             // 
+            this.username.AccessibleName = "";
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.username.Location = new System.Drawing.Point(361, 69);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(214, 30);
             this.username.TabIndex = 8;
+            this.username.Tag = "username";
             // 
             // password
             // 

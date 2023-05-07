@@ -9,7 +9,7 @@ namespace ARIAN2_Jegyfoglalo
 {
     class DB
     {
-        private SQLiteConnection con = new SQLiteConnection("data source=adatbazis.db");
+        private SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\HB-PC\\Desktop\\Modelling and testing\\ticketme-main\\ARIAN2_Jegyfoglalo\\ARIAN2_Jegyfoglalo\\bin\\Debug\\adatbazis.db;Version=3;Mode=ReadWrite;journal mode=Off;", true);
 
         public SQLiteConnection GetConnection()
         {

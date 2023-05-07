@@ -120,7 +120,9 @@ namespace ARIAN2_Jegyfoglalo
         private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             tol.Items.Clear();
+            tol.Text = "";
             ig.Items.Clear();
+            ig.Text = "";
             nem.Text = "Belföldi";
             mode = 0;
             string[] megallok = { "Veszprém", "Székesfehérvár", "Budapest",
@@ -139,7 +141,9 @@ namespace ARIAN2_Jegyfoglalo
         private void hToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             tol.Items.Clear();
+            tol.Text = "";
             ig.Items.Clear();
+            ig.Text = "";
             nem.Text = "International";
             mode = 1;
             string[] megallok = { "Budapest", "Pozsony", "Prága", "Drezda", "Berlin", "Hamburg"
@@ -290,6 +294,119 @@ namespace ARIAN2_Jegyfoglalo
             this.chart1.Series["Ar"].Points.AddXY("1.osztály", osszeg1);
             this.chart1.Series["Ar"].Points.AddXY("2.osztály", osszeg2);
             db.closeconnection();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Készítette: Holicza Barnabás");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tol.Items.Clear();
+            tol.Text = "";
+            ig.Items.Clear();
+            ig.Text = "";
+            nem.Text = "Belföldi";
+            mode = 0;
+            string[] megallok = { "Veszprém", "Székesfehérvár", "Budapest",
+                "Szeged", "Hódmezővásárhely", "Szentes", "Kecskemét"};
+            for (int i = 0; i < megallok.Length; i++)
+            {
+                tol.Items.Add(megallok[i]);
+            }
+            ig.Enabled = false;
+            Tól.Text = "Honnan";
+            label26.Text = "Hova";
+            teljesBevételToolStripMenuItem.Text = "Teljes bevétel";
+            teljesBevételJegytípusonkéntToolStripMenuItem.Text = "Tejles bevétel jegytípusonként";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tol.Items.Clear();
+            tol.Text = "";
+            ig.Items.Clear();
+            ig.Text = "";
+            nem.Text = "International";
+            mode = 1;
+            string[] megallok = { "Budapest", "Pozsony", "Prága", "Drezda", "Berlin", "Hamburg"
+            , "Bécs", "Klagenfurt", "Velence", "Róma"};
+            for (int i = 0; i < megallok.Length; i++)
+            {
+                tol.Items.Add(megallok[i]);
+            }
+            ig.Enabled = false;
+            Tól.Text = "From";
+            label26.Text = "To";
+            teljesBevételToolStripMenuItem.Text = "Total Income";
+            teljesBevételJegytípusonkéntToolStripMenuItem.Text = "Total Income By Ticket Type";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            db.openconnection();
+            chart1.Show();
+            chart1.Series["Ar"].IsValueShownAsLabel = true;
+            chart1.Series["Ar"].Color = Color.Green;
+            foreach (var x in chart1.Series)
+            {
+                x.Points.Clear();
+            }
+            cmd = new SQLiteCommand("select * from vasarlas where Menetrend='" + utvonal.Text + "'", db.GetConnection());
+            cmd.ExecuteNonQuery();
+            dt = new DataTable();
+            sda = new SQLiteDataAdapter(cmd);
+            sda.Fill(dt);
+            int arr = 0;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                arr += Convert.ToInt32(dt.Rows[i][4]);
+            }
+            this.chart1.Series["Ar"].Points.AddXY("Teljes bevétel", arr);
+            db.closeconnection();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            db.openconnection();
+            chart1.Show();
+            chart1.Series["Ar"].IsValueShownAsLabel = true;
+            chart1.Series["Ar"].Color = Color.Green;
+            foreach (var x in chart1.Series)
+            {
+                x.Points.Clear();
+            }
+            cmd = new SQLiteCommand("select * from vasarlas where Menetrend='" + utvonal.Text + "'", db.GetConnection());
+            cmd.ExecuteNonQuery();
+            dt = new DataTable();
+            sda = new SQLiteDataAdapter(cmd);
+            sda.Fill(dt);
+            int db_szam1 = 0, db_szam2 = 0;
+            double osszeg1 = 0, osszeg2 = 0;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                db_szam1 = Convert.ToInt32(dt.Rows[i][3]);
+                db_szam2 = Convert.ToInt32(dt.Rows[i][2]);
+                if ((db_szam1 * (mode == 0 ? 2500 : 10000) - Convert.ToInt32(dt.Rows[i][5])) > 0)
+                    osszeg1 += (db_szam1 * (mode == 0 ? 2500 : 10000) - (db_szam1 * Convert.ToInt32(dt.Rows[i][5]) / (db_szam1 + db_szam2)));
+                else osszeg1 += 0;
+
+                if ((db_szam2 * (mode == 0 ? 1750 : 7500) - Convert.ToInt32(dt.Rows[i][5])) > 0)
+                    osszeg2 += (db_szam2 * (mode == 0 ? 1750 : 7500) - (db_szam2 * Convert.ToInt32(dt.Rows[i][5]) / (db_szam1 + db_szam2)));
+                else osszeg2 += 0;
+            }
+
+            this.chart1.Series["Ar"].Points.AddXY("1.osztály", osszeg1);
+            this.chart1.Series["Ar"].Points.AddXY("2.osztály", osszeg2);
+            db.closeconnection();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 lo = new Form1();
+            lo.Show();
         }
     }
 }

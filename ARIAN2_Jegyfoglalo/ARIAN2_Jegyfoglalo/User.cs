@@ -85,7 +85,9 @@ namespace ARIAN2_Jegyfoglalo
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             tol.Items.Clear();
+            tol.Text = "";
             ig.Items.Clear();
+            ig.Text = "";
             nem.Text = "Belföldi";
             mode = 0;
             string[] megallok = { "Veszprém", "Székesfehérvár", "Budapest",
@@ -102,6 +104,8 @@ namespace ARIAN2_Jegyfoglalo
             label27.Text = "Kupon:";
             label30.Text = "Végösszeg:";
             button1.Text = "Vásárlás";
+            button1.Enabled = false;
+            panel1.Visible = true;
         }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,7 +116,9 @@ namespace ARIAN2_Jegyfoglalo
         private void hToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tol.Items.Clear();
+            tol.Text = "";
             ig.Items.Clear();
+            ig.Text = "";
             nem.Text = "International";
             mode = 1;
             string[] megallok = { "Budapest", "Pozsony", "Prága", "Drezda", "Berlin", "Hamburg"
@@ -129,6 +135,8 @@ namespace ARIAN2_Jegyfoglalo
             label27.Text = "Coupon:";
             label30.Text = "Total:";
             button1.Text = "Buy";
+            button1.Enabled = false;
+            panel1.Visible = true;
         }
 
         private void User_Load(object sender, EventArgs e)
@@ -321,6 +329,70 @@ namespace ARIAN2_Jegyfoglalo
         {
             CheckBox c = sender as CheckBox;
             check_data_change(c, mode, c.Checked.ToString());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Készítette: Holicza Barnabás");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tol.Items.Clear();
+            tol.Text = "";
+            ig.Items.Clear();
+            ig.Text = "";
+            nem.Text = "Belföldi";
+            mode = 0;
+            string[] megallok = { "Veszprém", "Székesfehérvár", "Budapest",
+                "Szeged", "Hódmezővásárhely", "Szentes", "Kecskemét"};
+            for (int i = 0; i < megallok.Length; i++)
+            {
+                tol.Items.Add(megallok[i]);
+            }
+            ig.Enabled = false;
+            Tól.Text = "Honnan";
+            label26.Text = "Hova";
+            label25.Text = "Vásárló neve:";
+            label28.Text = "Jegyszám:";
+            label27.Text = "Kupon:";
+            label30.Text = "Végösszeg:";
+            button1.Text = "Vásárlás";
+            button1.Enabled = false;
+            panel1.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tol.Items.Clear();
+            tol.Text = "";
+            ig.Items.Clear();
+            ig.Text = "";
+            nem.Text = "International";
+            mode = 1;
+            string[] megallok = { "Budapest", "Pozsony", "Prága", "Drezda", "Berlin", "Hamburg"
+            , "Bécs", "Klagenfurt", "Velence", "Róma"};
+            for (int i = 0; i < megallok.Length; i++)
+            {
+                tol.Items.Add(megallok[i]);
+            }
+            ig.Enabled = false;
+            Tól.Text = "From";
+            label26.Text = "To";
+            label25.Text = "Name:";
+            label28.Text = "Number of tickets:";
+            label27.Text = "Coupon:";
+            label30.Text = "Total:";
+            button1.Text = "Buy";
+            button1.Enabled = false;
+            panel1.Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 lo = new Form1();
+            lo.Show();
         }
 
         private void kupon_TextChanged(object sender, EventArgs e)
